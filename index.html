@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice</title>
+    <script src="dice.js" async> </script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+
+
+
+</head>
+<body>
+    <h1 id="title">Dice Roll</h1>
+
+
+    <div>
+    <button class="Roll" id="ODie" onclick="numDice(1)"> 1 Die</button>
+    <button class="Roll" id="TDice" onclick="numDice(2)"> 2 Dice</button>
+    <button class="Roll" id="ThDice" onclick="numDice(3)"> 3 Dice</button>
+
+
+    <article>
+        <form id="diceRollForm" onsubmit="form(event)">
+            <label for="numRolls">Number of Rolls:</label>
+            <input type="number" id="numRolls" name="numRolls" min="1" required>
+            <button type="submit">Roll Dice X Amount of Times</button>
+        </form>
+        <button class="Roll" id="DiceRoll" onclick="rNum(1)"> Dice Roll Once</button>
+    </article>
+    </div>
+
+
+<div><span id="dNum">Number of Dice to Roll:</span></div>
+   
+    <table id = "table">
+        <tr>
+        <th>Stats</th>
+        <th>Frequency of Rolls</th>
+        <th>Frequency of Numbers</th>
+        </tr>
+
+
+        <tr>
+            <td><p id="Mean">Mean: </p></td>  
+            <td><p id="fDoubles">Number of Doubles:</p></td>
+            <td><p id="f1">Frequency of 1:</p></td>
+            <td><p id="f2">Frequency of 2:</p></td>
+            <td><p id="f3">Frequency of 3:</p></td>
+            <td><p id="f4">Frequency of 4:</p></td>
+            <td><p id="f5">Frequency of 5:</p></td>
+            <td><p id="f6">Frequency of 6:</p></td>
+        </tr>
+
+
+        <tr>
+            <td><p id="Mode">Mode: </p></td>
+            <td><p id="fTripless">Number of Triples:</p></td>
+            <td><p id="f7">Frequency of 7:</p></td>
+            <td><p id="f8">Frequency of 8:</p></td>
+            <td><p id="f9">Frequency of 9:</p></td>
+            <td><p id="f10">Frequency of 10:</p></td>
+            <td><p id="f11">Frequency of 11:</p></td>
+            <td><p id="f12">Frequency of 12:</p></td>
+        </tr>
+
+
+        <tr>
+            <td><p id="Median">Median: </p></td>
+            <td id = "special"><p id= "text">Have fun Dicing!</p></td>
+            <td><p id="f13">Frequency of 13:</p></td>
+            <td><p id="f14">Frequency of 14:</p></td>
+            <td><p id="f15">Frequency of 15:</p></td>
+            <td><p id="f16">Frequency of 16:</p></td>
+            <td><p id="f17">Frequency of 17:</p></td>
+            <td><p id="f18">Frequency of 18:</p></td>
+        </tr>
+    </table>
+
+
+    <article id="list">Numbers Rolled:</article>
+</body>
+</html>

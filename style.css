@@ -1,0 +1,73 @@
+body{
+    background-color: beige;
+}
+
+
+
+
+.h1, #title{
+    text-align: center;
+    font-size: 40px;
+}
+
+
+
+
+.button, #ODie, #TDice, #ThDice{
+font-size: 16px;
+background-color: rosybrown;  
+}
+
+
+
+
+.button, #DiceRollx, #DiceRoll{
+    font-size: 20px;
+    background-color: rgba(206, 137, 147, 0.651);
+}
+
+
+
+
+
+
+
+
+.span, #dNum{
+font-size: larger;
+background-color: aliceblue;
+border-style: solid;
+}
+
+
+
+
+ #table, th, td{
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+    table-layout: fixed;
+    border-radius: 10px;
+    font-size: 20px
+
+
+
+
+}
+
+
+
+
+#special{
+    background-color: rgb(224, 208, 186);
+}
+#text{
+    font-style: Times;
+    font-style: bold;
+    font-size: 25px;
+}
+
+
+#list{
+    font-size: larger;
+}
